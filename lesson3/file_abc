@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 branch_a
+=======
+<<<<<<< HEAD
+branch_ab
+=======
+branch_ac
+>>>>>>> branch_c
+>>>>>>> branch_b
