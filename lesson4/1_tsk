@@ -1,0 +1,33 @@
+isnet@isnet-Inspiron-5391:~$ ssh isnet@192.168.1.5
+
+isnet@Ubn-Sys:~$ hostname
+Ubn-Sys
+isnet@Ubn-Sys:~$ sudo hostnamectl set-hostname Ubn-Sys-new
+isnet@Ubn-Sys:~$ hostname
+Ubn-Sys-new
+
+isnet@Ubn-Sys:~$ timedatectl
+               Local time: Сб 2025-01-18 22:32:21 MSK
+           Universal time: Сб 2025-01-18 19:32:21 UTC
+                 RTC time: Сб 2025-01-18 19:32:21
+                Time zone: Europe/Moscow (MSK, +0300)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+sudo timedatectl set-timezone Africa/Abidjan 
+isnet@Ubn-Sys:~$ timedatectl
+               Local time: Сб 2025-01-18 19:34:30 GMT
+           Universal time: Сб 2025-01-18 19:34:30 UTC
+                 RTC time: Сб 2025-01-18 19:34:30
+                Time zone: Africa/Abidjan (GMT, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+isnet@Ubn-Sys:~$ sudo nano /etc/motd 
+
+===
+Welcome!
+===
+
+

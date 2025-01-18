@@ -1,0 +1,137 @@
+isnet@Ubn-Sys:~$ sudo systemctl restart sshd
+isnet@isnet-Inspiron-5391:~$ ssh isnet@192.168.1.5
+===
+Welcome!
+===
+Last login: Sat Jan 18 22:46:16 2025 from 192.168.1.7
+
+isnet@Ubn-Sys-new:~$ uname -r
+6.8.0-51-generic
+
+isnet@Ubn-Sys-new:~$ lsmod
+Module                  Size  Used by
+tls                   155648  0
+xt_recent              24576  0
+xt_conntrack           12288  0
+nf_conntrack          196608  1 xt_conntrack
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+nft_compat             20480  0
+nf_tables             372736  1 nft_compat
+libcrc32c              12288  2 nf_conntrack,nf_tables
+nfnetlink              20480  2 nft_compat,nf_tables
+binfmt_misc            24576  1
+nls_iso8859_1          12288  1
+intel_rapl_msr         20480  0
+intel_rapl_common      40960  1 intel_rapl_msr
+x86_pkg_temp_thermal    20480  0
+intel_powerclamp       24576  0
+snd_hda_codec_realtek   200704  1
+snd_hda_codec_hdmi     94208  1
+snd_hda_codec_generic   122880  1 snd_hda_codec_realtek
+mei_hdcp               28672  0
+mei_pxp                16384  0
+coretemp               24576  0
+snd_hda_intel          61440  3
+nouveau              3100672  4
+crct10dif_pclmul       12288  1
+polyval_clmulni        12288  0
+snd_intel_dspcfg       36864  1 snd_hda_intel
+polyval_generic        12288  1 polyval_clmulni
+ghash_clmulni_intel    16384  0
+snd_intel_sdw_acpi     16384  1 snd_intel_dspcfg
+sha256_ssse3           32768  0
+sha1_ssse3             32768  0
+snd_hda_codec         204800  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+aesni_intel           356352  0
+snd_hda_core          139264  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+drm_gpuvm              45056  1 nouveau
+snd_hwdep              20480  1 snd_hda_codec
+crypto_simd            16384  1 aesni_intel
+cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
+drm_exec               12288  2 drm_gpuvm,nouveau
+snd_pcm               192512  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+gpu_sched              61440  1 nouveau
+rapl                   20480  0
+drm_ttm_helper         12288  1 nouveau
+snd_seq_midi           24576  0
+snd_seq_midi_event     16384  1 snd_seq_midi
+intel_cstate           24576  0
+input_leds             12288  0
+snd_rawmidi            57344  1 snd_seq_midi
+ttm                   110592  2 drm_ttm_helper,nouveau
+snd_seq               118784  2 snd_seq_midi,snd_seq_midi_event
+drm_display_helper    237568  1 nouveau
+snd_seq_device         16384  3 snd_seq,snd_seq_midi,snd_rawmidi
+wmi_bmof               12288  0
+eeepc_wmi              12288  0
+cec                    94208  1 drm_display_helper
+serio_raw              20480  0
+mei_me                 53248  2
+snd_timer              49152  2 snd_seq,snd_pcm
+rc_core                73728  1 cec
+at24                   28672  0
+mei                   167936  5 mei_hdcp,mei_pxp,mei_me
+i2c_algo_bit           16384  1 nouveau
+snd                   143360  17 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm,snd_rawmidi
+soundcore              16384  1 snd
+mxm_wmi                12288  1 nouveau
+mac_hid                12288  0
+sch_fq_codel           24576  2
+msr                    12288  0
+parport_pc             53248  0
+ppdev                  24576  0
+lp                     28672  0
+parport                73728  3 parport_pc,lp,ppdev
+efi_pstore             12288  0
+ip_tables              32768  0
+x_tables               65536  4 xt_conntrack,nft_compat,xt_recent,ip_tables
+autofs4                57344  2
+hid_generic            12288  0
+usbhid                 77824  0
+hid                   180224  2 usbhid,hid_generic
+mfd_aaeon              12288  0
+asus_wmi               86016  2 eeepc_wmi,mfd_aaeon
+ledtrig_audio          12288  1 asus_wmi
+sparse_keymap          12288  1 asus_wmi
+nvme                   61440  0
+crc32_pclmul           12288  0
+platform_profile       12288  1 asus_wmi
+i2c_i801               36864  0
+nvme_core             212992  1 nvme
+ahci                   49152  2
+i2c_smbus              16384  1 i2c_i801
+e1000e                356352  0
+lpc_ich                32768  0
+libahci                53248  1 ahci
+nvme_auth              28672  1 nvme_core
+xhci_pci               24576  0
+xhci_pci_renesas       20480  1 xhci_pci
+video                  73728  2 asus_wmi,nouveau
+wmi                    28672  6 video,asus_wmi,wmi_bmof,mfd_aaeon,mxm_wmi,nouveau
+
+isnet@Ubn-Sys-new:~$ sudo dmidecode -t processor | grep "Version" && cat /proc/cpuinfo | grep "core id"
+	Version: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+core id		: 0
+core id		: 1
+core id		: 2
+core id		: 3
+core id		: 0
+core id		: 1
+core id		: 2
+core id		: 3
+
+isnet@Ubn-Sys-new:~$ cat /proc/meminfo | grep Mem
+MemTotal:        8080308 kB
+MemFree:         5779416 kB
+MemAvailable:    6947972 kB
+
+isnet@Ubn-Sys-new:~$ groups
+isnet adm cdrom sudo dip plugdev lpadmin lxd sambashare smbgrp
+
+Текущий
+isnet@Ubn-Sys-new:~$ id
+
+Инфо о всех пользователях системы
+isnet@Ubn-Sys-new:~$ cat /etc/passwd
+

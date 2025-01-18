@@ -1,0 +1,80 @@
+Script started on 2025-01-19 01:04:32+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="128" LINES="29"]
+[?2004h]0;isnet@Ubn-Sys-new: ~[01;32misnet@Ubn-Sys-new[00m:[01;34m~[00m$ [7msudo systemctl status nginx[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl status nginx
+[?2004l[sudo] password for isnet: 
+[?1h=[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)[m
+     Active: [0;1;32mactive (running)[0m since Sun 2025-01-19 00:07:46 MSK; 57min ago[m
+       Docs: man:nginx(8)[m
+   Main PID: 5848 (nginx)[m
+      Tasks: 9 (limit: 9377)[m
+     Memory: 8.3M[m
+        CPU: 52ms[m
+     CGroup: /system.slice/nginx.service[m
+             ├─5848 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[m
+             ├─5850 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5851 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5852 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5853 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5854 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5855 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5856 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             └─5857 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+[m
+янв 19 00:07:46 Ubn-Sys-new systemd[1]: Starting A high performance web server and a reverse proxy server...[m
+янв 19 00:07:46 Ubn-Sys-new systemd[1]: Started A high performance web server and a reverse proxy server.[m
+[K[?1l>[?2004h]0;isnet@Ubn-Sys-new: ~[01;32misnet@Ubn-Sys-new[00m:[01;34m~[00m$ [7msudo systemctl disable nginx[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl disable nginx
+[?2004lSynchronizing state of nginx.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable nginx
+Removed /etc/systemd/system/multi-user.target.wants/nginx.service.
+[?2004h]0;isnet@Ubn-Sys-new: ~[01;32misnet@Ubn-Sys-new[00m:[01;34m~[00m$ sudo systemctl disable nginx[1Pstatus[C[C[C[C[C[C
+[?2004l[?1h=[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (/lib/systemd/system/nginx.service; disabled; vendor preset: enabled)[m
+     Active: [0;1;32mactive (running)[0m since Sun 2025-01-19 00:07:46 MSK; 57min ago[m
+       Docs: man:nginx(8)[m
+   Main PID: 5848 (nginx)[m
+      Tasks: 9 (limit: 9377)[m
+     Memory: 8.3M[m
+        CPU: 52ms[m
+     CGroup: /system.slice/nginx.service[m
+             ├─5848 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[m
+             ├─5850 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5851 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5852 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5853 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5854 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5855 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5856 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             └─5857 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+[m
+янв 19 00:07:46 Ubn-Sys-new systemd[1]: Starting A high performance web server and a reverse proxy server...[m
+янв 19 00:07:46 Ubn-Sys-new systemd[1]: Started A high performance web server and a reverse proxy server.[m
+[K[?1l>[?2004h]0;isnet@Ubn-Sys-new: ~[01;32misnet@Ubn-Sys-new[00m:[01;34m~[00m$ sudo systemctl status nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginxe nginxn nginxa nginxb nginxl nginxe nginx
+[?2004lSynchronizing state of nginx.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable nginx
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+[?2004h]0;isnet@Ubn-Sys-new: ~[01;32misnet@Ubn-Sys-new[00m:[01;34m~[00m$ sudo systemctl enable nginxstatus[C[C[C[C[C[C
+[?2004l[?1h=[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)[m
+     Active: [0;1;32mactive (running)[0m since Sun 2025-01-19 00:07:46 MSK; 57min ago[m
+       Docs: man:nginx(8)[m
+   Main PID: 5848 (nginx)[m
+      Tasks: 9 (limit: 9377)[m
+     Memory: 8.3M[m
+        CPU: 52ms[m
+     CGroup: /system.slice/nginx.service[m
+             ├─5848 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[m
+             ├─5850 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5851 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5852 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5853 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5854 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5855 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             ├─5856 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+             └─5857 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""[m
+[m
+янв 19 00:07:46 Ubn-Sys-new systemd[1]: Starting A high performance web server and a reverse proxy server...[m
+янв 19 00:07:46 Ubn-Sys-new systemd[1]: Started A high performance web server and a reverse proxy server.[m
+[K[?1l>[?2004h]0;isnet@Ubn-Sys-new: ~[01;32misnet@Ubn-Sys-new[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2025-01-19 01:05:32+03:00 [COMMAND_EXIT_CODE="0"]
