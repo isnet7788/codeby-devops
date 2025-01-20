@@ -37,6 +37,8 @@ Lesson 5
 
 2 + **Запретить входящий ICMP трафик на server с помощью IPTables**
 
+
+
 2 + **Разрешить входящие SSH подключения к client только от server, через конфигурацию SSH**
 
 3 - **Настроить OpenVPN server на server'**
