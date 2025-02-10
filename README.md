@@ -53,9 +53,9 @@ Lesson 5
 [hosts.allow](https://github.com/isnet7788/codeby-devops/blob/main/lesson5/2_hosts.allow)
 [hosts.deny](https://github.com/isnet7788/codeby-devops/blob/main/lesson5/2_hosts.deny)
 
-3 **Настроить OpenVPN server на server'**
-3 **Настроить OpenVPN client на client, подключить его к серверу'**
-3 **Настроить доступ клиента в Интернет только через подключение к серверу через OpenVPN''**
+3 **Настроить OpenVPN server на server'**  
+3 **Настроить OpenVPN client на client, подключить его к серверу'**  
+3 **Настроить доступ клиента в Интернет только через подключение к серверу через OpenVPN''**  
 > Вопросы:  
 > 'Т.к. нужно "Настроить OpenVPN server на server", но по условию нужно настроить машины как client-server и поэтому не совсем понятно о какой конфигруции server-server идет речь.
 > ''Какие именно файлы конфигурации нужно загрузить и как проверить конфигурацию.
