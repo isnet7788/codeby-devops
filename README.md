@@ -6,13 +6,16 @@ Lesson 3
 1 + **Установить Git**
 
 2 + **Создать аккаунт на Github.com**
+Создал
 
 3 + **Создать публичный репозиторий codeby-devops на Github**
+[codeby-devops](https://github.com/isnet7788/codeby-devops/)
 
 4 + **Настроить доступ к Github по SSH**
+Настроил
 
 5 + **Работа с репозиторием'**
-
+[папка lesson 3](https://github.com/isnet7788/codeby-devops/tree/main/lesson3)
 'Из lesson3 в main
 
 Lesson 4
