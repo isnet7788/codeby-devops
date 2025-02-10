@@ -52,7 +52,3 @@ Lesson 5
 2 **Разрешить входящие SSH подключения к client только от server, через конфигурацию SSH**
 > [hosts.allow](https://github.com/isnet7788/codeby-devops/blob/main/lesson5/2_hosts.allow)
 > [hosts.deny](https://github.com/isnet7788/codeby-devops/blob/main/lesson5/2_hosts.deny)
-
-3 **Настроить OpenVPN server на server'**  
-3 **Настроить OpenVPN client на client, подключить его к серверу'**  
-3 **Настроить доступ клиента в Интернет только через подключение к серверу через OpenVPN''**  
