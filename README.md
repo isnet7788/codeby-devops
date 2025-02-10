@@ -20,7 +20,7 @@ Lesson 3
 'Из lesson3 в main
 
 Lesson 4
-РАБОТА С ОПЕРАЦИОННОЙ СИСТЕМОЙ LINUX
+РАБОТА С ОПЕРАЦИОННОЙ СИСТЕМОЙ LINUX  
 1 **Изменить конфигурацию ОС**
 > [Измененная конфигурация](https://github.com/isnet7788/codeby-devops/blob/main/lesson4/1_tsk)
 
